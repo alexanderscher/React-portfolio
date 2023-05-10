@@ -3,15 +3,6 @@ import Body from "./Body";
 import "../styles/styles.css";
 
 const styles = {
-  left: {
-    backgroundColor: "blue",
-    height: "100vh",
-    width: "50%",
-    position: "fixed",
-    top: 0,
-    left: 0,
-    overflow: "auto",
-  },
   container: {
     marginLeft: "30px",
     marginTop: "30px",
@@ -29,9 +20,10 @@ function Header({
   handleContactClick,
   handleWorksClick,
   handleAlexClick,
+  handleResumeClick,
 }) {
   return (
-    <div style={styles.left}>
+    <div className="left">
       <div style={styles.container}>
         <p
           className="header-options"
@@ -60,6 +52,13 @@ function Header({
           onClick={handleContactClick}
         >
           CONTACT
+        </p>
+        <p
+          className="header-options"
+          style={styles.p}
+          onClick={handleResumeClick}
+        >
+          RESUME
         </p>
       </div>
     </div>

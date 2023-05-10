@@ -1,12 +1,6 @@
 import React from "react";
 
 const styles = {
-  right: {
-    backgroundColor: "white",
-    height: "100%",
-    width: "50%",
-    marginLeft: "50%",
-  },
   container: {
     marginLeft: "30px",
     marginTop: "30px",
@@ -14,14 +8,14 @@ const styles = {
   p: {
     display: "block",
     marginBottom: "10px",
-    color: "black",
+    color: "grey",
     fontSize: "20px",
   },
 };
 
 function About() {
   return (
-    <div style={styles.right}>
+    <div className="right">
       <div style={styles.container}>
         <p style={styles.p}>PROGRAMMER</p>
         <p style={styles.p}>MUSICIAN</p>

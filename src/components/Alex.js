@@ -10,7 +10,7 @@ const styles = {
   p: {
     display: "block",
     marginBottom: "10px",
-    color: "black",
+    color: "grey",
     fontSize: "20px",
   },
 };
@@ -20,6 +20,7 @@ function Alex({
   handleContactClick,
   handleWorksClick,
   handleAlexClick,
+  handleResumeClick,
 }) {
   return (
     <div className="right">
@@ -51,6 +52,13 @@ function Alex({
           onClick={handleContactClick}
         >
           CONTACT
+        </p>
+        <p
+          className="header-options"
+          style={styles.p}
+          onClick={handleResumeClick}
+        >
+          RESUME
         </p>
       </div>
     </div>
