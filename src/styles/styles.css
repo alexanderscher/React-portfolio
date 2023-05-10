@@ -16,15 +16,24 @@
 
 .img-wrapper {
   border: 1px solid black;
-  width: 60%;
+  width: 90%;
   height: 0;
-  padding-bottom: 60%;
+  padding-bottom: 80%;
   margin-bottom: 4%;
   margin-top: 30px;
+  overflow: hidden;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+img {
+  width: 100%;
+  /* height: fit-content; */
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 @media (max-width: 600px) {
   .img-wrapper {
     width: 90%;
-    padding-bottom: 100%;
+    padding-bottom: 80%;
   }
 }
