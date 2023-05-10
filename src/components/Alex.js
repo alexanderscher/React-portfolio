@@ -1,12 +1,8 @@
 import React from "react";
+import Body from "./Body";
+import "../styles/styles.css";
 
 const styles = {
-  right: {
-    backgroundColor: "white",
-    height: "100%",
-    width: "50%",
-    marginLeft: "50%",
-  },
   container: {
     marginLeft: "30px",
     marginTop: "30px",
@@ -14,20 +10,48 @@ const styles = {
   p: {
     display: "block",
     marginBottom: "10px",
-    textDecoration: "none",
     color: "black",
     fontSize: "20px",
   },
 };
 
-function Alex() {
+function Alex({
+  handleAboutClick,
+  handleContactClick,
+  handleWorksClick,
+  handleAlexClick,
+}) {
   return (
-    <div style={styles.right}>
+    <div className="right">
       <div style={styles.container}>
-        <p style={styles.p}>ALEX SCHER</p>
-        <p style={styles.p}>ABOUT</p>
-        <p style={styles.p}>WORKS</p>
-        <p style={styles.p}>CONTACT</p>
+        <p
+          className="header-options"
+          onClick={handleAlexClick}
+          style={styles.p}
+        >
+          ALEX SCHER
+        </p>
+        <p
+          className="header-options"
+          style={styles.p}
+          onClick={handleAboutClick}
+        >
+          ABOUT
+        </p>
+        <p
+          className="header-options"
+          style={styles.p}
+          onClick={handleWorksClick}
+        >
+          WORKS
+        </p>
+        <p
+          className="header-options"
+          style={styles.p}
+          onClick={handleContactClick}
+        >
+          CONTACT
+        </p>
       </div>
     </div>
   );

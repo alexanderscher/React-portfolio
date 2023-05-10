@@ -1,6 +1,6 @@
 import React from "react";
 import Body from "./Body";
-import "./styles.css";
+import "../styles/styles.css";
 
 const styles = {
   left: {
@@ -24,11 +24,20 @@ const styles = {
   },
 };
 
-function Header({ handleAboutClick, handleContactClick, handleWorksClick }) {
+function Header({
+  handleAboutClick,
+  handleContactClick,
+  handleWorksClick,
+  handleAlexClick,
+}) {
   return (
     <div style={styles.left}>
       <div style={styles.container}>
-        <p className="header-options" style={styles.p}>
+        <p
+          className="header-options"
+          onClick={handleAlexClick}
+          style={styles.p}
+        >
           ALEX SCHER
         </p>
         <p

@@ -14,7 +14,6 @@ const styles = {
   p: {
     display: "block",
     marginBottom: "10px",
-    textDecoration: "none",
     color: "black",
     fontSize: "20px",
   },

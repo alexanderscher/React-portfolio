@@ -18,12 +18,12 @@ const styles = {
   },
   textarea: {
     minWidth: "10%",
-    outline: "none",
     display: "block",
     marginTop: "30px",
     maxWidth: "90%",
     minWidth: "90%",
-    minHeight: "200px",
+    height: "200px",
+    resize: "none",
     fontFamily: "Arial",
     border: "1px solid grey",
   },
@@ -36,8 +36,7 @@ const styles = {
   button: {
     marginTop: "10px",
     border: "1px solid grey",
-    minWidth: "15%",
-    maxWidth: "15%",
+    width: "60px",
     height: "26px",
     backgroundColor: "white",
     color: "grey",
@@ -82,7 +81,7 @@ function Contact() {
   };
 
   return (
-    <div style={styles.right}>
+    <div className="right">
       <form style={styles.form}>
         <input
           style={styles.input}

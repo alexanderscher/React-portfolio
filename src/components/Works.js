@@ -13,25 +13,18 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
   },
-
-  // box: {
-  //   border: "1px solid black",
-  //   marginTop: "30px",
-  //   width: "48%",
-  //   height: "30vh",
-  // },
 };
 
 function Works() {
   return (
-    <div style={styles.right}>
+    <div className="right">
       <div style={styles.container}>
-        <div className="img-wrapper" style={styles.box}></div>
-        <div className="img-wrapper" style={styles.box}></div>
-        <div className="img-wrapper" style={styles.box}></div>
-        <div className="img-wrapper" style={styles.box}></div>
-        <div className="img-wrapper" style={styles.box}></div>
-        <div className="img-wrapper" style={styles.box}></div>
+        <div className="img-wrapper"></div>
+        <div className="img-wrapper"></div>
+        <div className="img-wrapper"></div>
+        <div className="img-wrapper"></div>
+        <div className="img-wrapper"></div>
+        <div className="img-wrapper"></div>
       </div>
     </div>
   );
