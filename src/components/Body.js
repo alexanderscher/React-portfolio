@@ -8,11 +8,6 @@ const styles = {
   content: {
     display: "flex",
   },
-  body: {
-    display: "flex",
-    height: "100vh",
-    width: "50%",
-  },
 };
 
 function Body() {

@@ -1,0 +1,8 @@
+.header-options:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
