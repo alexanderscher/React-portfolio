@@ -43,7 +43,11 @@ function Works() {
                 <p style={styles.p}>
                   FoodyConnect is an app created with Javascript, MySql,
                   Sequalize, CSS, Handlebars, Express and Javascript. Users can
-                  create accounts, post and comment.
+                  create accounts, post and comment. Click{" "}
+                  <a href="https://tranquil-anchorage-26220.herokuapp.com/">
+                    here
+                  </a>{" "}
+                  to view the deployed app.
                 </p>
               </div>
             )}
@@ -62,7 +66,11 @@ function Works() {
                   The Weather App is a simple application that displays the
                   current weather and forecast for a specified location. This
                   was created using OpenWeather API, HTML/CSS, JavaScript and
-                  erikflowers.
+                  erikflowers. Click{" "}
+                  <a href="https://github.com/alexanderscher/weather-app">
+                    here
+                  </a>{" "}
+                  to view the github repo.
                 </p>
               </div>
             )}
@@ -80,6 +88,9 @@ function Works() {
                 <p style={styles.p}>
                   This is a simple note-taking application built with Express.js
                   that allows users to create, read, update, and delete notes.
+                  Click{" "}
+                  <a href="https://github.com/alexanderscher/note-take">here</a>{" "}
+                  to view the github repo.
                 </p>
               </div>
             )}
@@ -98,7 +109,11 @@ function Works() {
                   This is a command-line application that allows you to manage
                   employees, roles, and departments using Inquirer and SQL. You
                   can add new employees, update existing ones, and view employee
-                  information based on different criteria.
+                  information based on different criteria. Click{" "}
+                  <a href="https://github.com/alexanderscher/employee-tracker">
+                    here
+                  </a>{" "}
+                  to view the github repo.
                 </p>
               </div>
             )}
@@ -116,6 +131,11 @@ function Works() {
                 <p style={styles.p}>
                   This project sets up CRUD routes to create an API using
                   Express, Node.js, and Sequelize for an e-commerce application.
+                  Click{" "}
+                  <a href="https://github.com/alexanderscher/E-commerce-back-end">
+                    here
+                  </a>{" "}
+                  to view the github repo.
                 </p>
               </div>
             )}
@@ -132,7 +152,11 @@ function Works() {
               <div className="hover-text">
                 <p style={styles.p}>
                   This was the first portfolio template I created only using
-                  HTML/CSS
+                  HTML/CSS/. Click{" "}
+                  <a href="https://github.com/alexanderscher/professional-portfolio">
+                    here
+                  </a>{" "}
+                  to view the github repo.
                 </p>
               </div>
             )}
