@@ -16,7 +16,7 @@ const styles = {
   button: {
     marginTop: "10px",
     border: "1px solid grey",
-    width: "80px",
+    width: "100px",
     height: "26px",
     backgroundColor: "white",
     color: "grey",
@@ -28,8 +28,8 @@ function About() {
     <div className="right">
       <div style={styles.container}>
         <p style={styles.p}>COMING SOON</p>
-        <a href={ExampleDoc} download="MyExampleDoc" target="_blank">
-          <button style={styles.button}>Download</button>
+        <a href={ExampleDoc} download="BlankPdf" target="_blank">
+          <button style={styles.button}>DOWNLOAD</button>
         </a>
       </div>
     </div>

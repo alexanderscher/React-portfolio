@@ -42,7 +42,24 @@ const styles = {
     color: "grey",
   },
   errorStyle: {
+    border: "none",
     borderBottom: "1px solid red",
+    outline: "none",
+    display: "block",
+    marginTop: "30px",
+    minWidth: "90%",
+    fontFamily: "Arial",
+  },
+  textareaError: {
+    minWidth: "10%",
+    display: "block",
+    marginTop: "30px",
+    maxWidth: "90%",
+    minWidth: "90%",
+    height: "200px",
+    resize: "none",
+    fontFamily: "Arial",
+    border: "1px solid red",
   },
 };
 
@@ -50,7 +67,11 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [inputStyle, setInputStyle] = useState("");
+  const [inputStyles, setInputStyles] = useState({
+    name: styles.input,
+    email: styles.input,
+    message: styles.textarea,
+  });
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -64,19 +85,42 @@ function Contact() {
     } else if (inputType === "message") {
       setMessage(inputValue);
     }
+
+    setInputStyles((prevState) => ({
+      ...prevState,
+      [inputType]: inputType === "message" ? styles.textarea : styles.input,
+    }));
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!email || !name || !message) {
-      setInputStyle({ ...styles.input, ...styles.errorStyle });
+      alert("Please fill out all the forms");
+      const newInputStyles = {};
+      if (!name) {
+        newInputStyles.name = styles.errorStyle;
+      }
+      if (!email) {
+        newInputStyles.email = styles.errorStyle;
+      }
+      if (!message) {
+        newInputStyles.message = styles.textareaError;
+      }
+      setInputStyles((prevState) => ({
+        ...prevState,
+        ...newInputStyles,
+      }));
       return;
     } else {
-      alert(`Email sent`);
+      alert("Email sent");
       setName("");
       setMessage("");
       setEmail("");
-      setInputStyle(styles.input);
+      setInputStyles({
+        name: styles.input,
+        email: styles.input,
+        message: styles.textarea,
+      });
     }
   };
 
@@ -84,21 +128,21 @@ function Contact() {
     <div className="right">
       <form style={styles.form}>
         <input
-          style={styles.input}
+          style={inputStyles.name}
           name="name"
           type="name"
           onChange={handleInputChange}
           placeholder="NAME"
         />
         <input
-          style={styles.input}
+          style={inputStyles.email}
           name="email"
           type="email"
           onChange={handleInputChange}
           placeholder="EMAIL"
         />
         <textarea
-          style={styles.textarea}
+          style={inputStyles.message}
           name="message"
           type="message"
           onChange={handleInputChange}
